@@ -1,0 +1,49 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.local
+.env.*.local
+*.env.secret
+.workdir/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Local secrets / tokens / caches
+appinsights.json
+msal_token_cache*
+*.pfx
+*.pem
+*.key
+*.cert
+*.crt
+*_secret.*
+*_secrets.*
+secrets.json
+config/local.*
+*.token
+
+# Customer / tenant data the Doctor works with (never commit)
+*botContent*.yml
+*BotContent*.yml
+conversationHistory-*.json
+Evaluate *.csv
+*evalset*.csv
+RAI_Event_Analysis*.txt
+samples/**/*.yml
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build output / packaged solutions
+.workdir/publish/
+/publish/
+*.cab
+*.zip
